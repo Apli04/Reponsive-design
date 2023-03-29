@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .container {
@@ -118,7 +118,11 @@
     -ms-transform: translate(-20px, -20px);
     -o-transform: translate(-20px, -20px);
 }
-
+img.tengah {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 @media screen and (max-width: 990px) {
     .navigation .box-navigation .menu-bar {
         display: block;

@@ -5,20 +5,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="dist/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
     <title>Halaman HOME</title>
+    <link rel="stylesheet" href="./dist/CSSframework/css/bootstrap.css">
 </head>
 
 <body>
     <!-- Navigation -->
     <section class="navigation">
-        <div class="container">
+        <div class="container p-3">
             <div class="box-navigation">
                 <!-- ? kolom pertama -->
                 <div class="logo">
@@ -31,7 +28,7 @@
                     <ul>
                         <li><a href="">Beranda</a></li>
                         <li><a href="">About</a></li>
-                        <li><a href="">Prising</a></li>
+                        <li><a href="">Pricing</a></li>
                         <li><a href="">Gallery</a></li>
                         <li><a href="">Contact</a></li>
                     </ul>
@@ -50,28 +47,72 @@
     <!-- Navigation -->
 
     <!-- Header  -->
-    <section class="header">
-        <div class="container">
+    <div class="container p-3 h-100 bg-warning">
+        <div class="row g-0">
             <div class="box-header">
                 <!-- ? kolom pertama -->
-                <div class="box">
+                <div class="col-12 col-lg-8 bg-white">
+                    <img class="tengah" src="assets/image/airTerjun.jpg" alt="pulau sumba" height="150px"
+                        align="left" />
                     <h1>Air terjun Lapopu Destinasi wisata di pulau Sumba</h1>
                     <p>Keindahan alam pulau Sumba merupakan anugerah dari Tuhan Yang Maha Kuasa yang wajib kita pelihara
                         dan lestarikan untuk anak cucu kita.</p>
-                    <button>Detail</button>
-                </div>
-                <!-- ? kolom pertama -->
-
-                <!-- ? kolom kedua -->
-                <div class="box">
-                    <img src="assets/image/airTerjun.jpg" alt="" />
                 </div>
 
-                <!-- ? kolom kedua -->
+            </div>
+            <!-- kolom kedua -->
+            <div class="col-8 col-lg-12 bg-white">
+                <img class="tengah" src="assets/image/pasola_1.jpg" alt="Pasola" height="100px" align="left" />
+                <h1>Pasola</h1>
+                <p>Budaya Pasola adalah permainan ketangkasan saling
+                    melempar lembing kayu dari atas kuda yang merupakan bagian dari upacara ritual Marapu.
+                </p>
             </div>
         </div>
-    </section>
+
+        <div class="container p-3">
+            <div class="container mt-3">
+                <h4>Form Control</h4>
+                <div class="form-group">
+                    <label for="name">First Name</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <textarea name="address" id="address" class="form-control" cols="30" rows="5"></textarea>
+                </div>
+
+
+            </div>
+            <div class="container mt-3">
+                <form>
+                    <div class="row mb-3">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="inputEmail3">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword3">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <button>Detail</button>
+    </div>
+
+    <!-- ? kolom kedua -->
+
+    </div>
     <!-- Header  -->
+    <!-- Bootstrap javascript -->
+    <script src="./dist/CSSframework/js/jquery.min.js"></script>
+    <script src="./dist/CSSframework/js/bootstrap.js"></script>
+    <!-- End Bootstrap javascript -->
 </body>
 
 </html>
